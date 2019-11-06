@@ -2,6 +2,7 @@ import React from 'react';
 import uuid from 'uuid/v4';
 import Form from 'react-jsonschema-form';
 import { connect } from 'react-redux';
+import { action } from '../todoList/todoList-reducer-action';
 
 import { When } from '../if';
 import Modal from '../modal';
@@ -115,5 +116,6 @@ function mapDispatchToProps(dispatch) {
 
 export default connect(
   mapStateToProps,
-  mapDispatchToProps
-)(toDo);
+  mapDispatchToProps)
+(toDo);
+
